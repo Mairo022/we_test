@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Test</title>
+</head>
+<body>
+    <main>
+        <section id="content">
+            <h1>Quam Tristique Condimentum</h1>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                <span class="colored">Curabitur blandit</span> tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+            <article class="container">
+                <div class="text">
+                    <h2>Fringilla Euismod Adipiscing Ipsum</h2>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.</p>
+                    <ul class="list">
+                        <li class="list__item">Tellus Ullamcorper Inceptos</li>
+                        <li class="list__item">Magna Condimentum</li>
+                        <li class="list__item">
+                            <ul class="sublist">
+                                <li class="sublist__item">Mattis Tristique</li>
+                                <li class="sublist__item">Pharetra Pellentesque Dapibus</li>
+                            </ul>
+                        </li>
+                        <li class="list__item">Aenean Inceptos</li>
+                        <li class="list__item">Parturient Bibendum</li>
+                    </ul>
+                </div>
+                <div class="img_container">
+                    <img src="assets/image.png" alt="article img">
+                </div>
+            </article>
+        </section>
+        <section id="calculator">
+            <h4>Compensation Calculator</h4>
+            <form id="calc__form">
+                <label for="calc__income" class="field_label">Average Income</label>
+                <div class="input_wrapper">
+                    <input type="number" id="calc__income" name="calc__income" placeholder="0" min="0" step="0.01">
+                    <span class="input_unit">€</span>
+                </div>
+                <label for="calc__sick_days" class="field_label">Days on sick-leave</label>
+                <div class="input_wrapper">
+                    <input type="number" id="calc__sick_days" name="calc__sick_days" placeholder="0" min="0">
+                    <span class="input_unit">days</span>
+                </div>
+                <div class="checkbox_wrapper">
+                    <input type="checkbox" id="calc__tuberculosis" name="calc__tuberculosis">
+                    <label for="calc__tuberculosis">I have tuberculosis</label>
+                </div>
+                <button type="submit" class="submit">Calculate</button>
+            </form>
+            <div class="result_details">
+                <div class="result__column">
+                    <div class="column__row column__row-compensation">
+                        <p>The employer compensates</p>
+                        <p class="compensation_days" id="employer_compensation_days">
+                            0 days
+                        </p>
+                    </div>
+                    <div class="column__row column__row-allowance">
+                        <p class="allowance_total"
+                           id="employer_compensation_total">
+                            0,00€
+                        </p>
+                        <p>Daily allowance</p>
+                        <p id="employer_compensation_daily">
+                            0,00€
+                        </p>
+                    </div>
+                </div>
+                <div class="result__column">
+                    <div class="column__row column__row-compensation">
+                        <p>Health Insurance compensates</p>
+                        <p class="compensation_days"
+                           id="insurance_compensation_days">
+                            0 days
+                        </p>
+                    </div>
+                    <div class="column__row column__row-allowance">
+                        <p class="allowance_total"
+                           id="insurance_compensation_total">
+                            0,00€
+                        </p>
+                        <p>Daily allowance</p>
+                        <p id="insurance_compensation_daily">0,00€</p>
+                    </div>
+                </div>
+            </div>
+            <div class="result_total">
+                <p class="result_total__text">Compensation total for <span id="compensation_days">0 days</span> (net)</p>
+                <p class="result_total__sum" id="compensation_total">0,00€</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
