@@ -36,6 +36,7 @@ main {
     width: 100%;
     gap: 100px;
     padding: 100px;
+    margin: 0 auto;
 }
 
 h1,h2,h4 {
@@ -115,7 +116,7 @@ h2 {
         background: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
     }
 
-    .list__item:has(.sublist__item)::before {
+    .list__item.has-sublist::before {
         opacity: 0;
     }
 
